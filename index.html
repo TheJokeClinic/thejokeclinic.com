@@ -273,6 +273,78 @@
             letter-spacing: 0.05em;
         }
 
+        /* ─── LIVE ─── */
+        .live-dates {
+            margin-top: 40px;
+        }
+
+        .live-show {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            color: var(--white);
+            padding: 24px 0;
+            border-bottom: 1px solid var(--grey-mid);
+            transition: all 0.3s ease;
+        }
+
+        .live-show:first-child {
+            border-top: 1px solid var(--grey-mid);
+        }
+
+        .live-show:hover {
+            padding-left: 12px;
+        }
+
+        .live-show-details {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .live-show-date {
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--grey-light);
+        }
+
+        .live-show-name {
+            font-family: 'Squada One', sans-serif;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .live-show-venue {
+            font-size: 0.85rem;
+            color: var(--grey-light);
+            font-weight: 300;
+        }
+
+        .live-show-cta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--grey-light);
+            white-space: nowrap;
+            transition: color 0.3s ease;
+        }
+
+        .live-show:hover .live-show-cta {
+            color: var(--white);
+        }
+
+        .live-show-cta svg {
+            width: 14px;
+            height: 14px;
+        }
+
         /* ─── HOSTS ─── */
         .hosts {
             border-top: 1px solid var(--grey-mid);
@@ -485,6 +557,7 @@
         <a href="#" class="nav-logo">The Joke Clinic</a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#live">Live</a></li>
             <li><a href="#consultants">Consultants</a></li>
             <li><a href="#connect">Connect</a></li>
         </ul>
@@ -540,6 +613,38 @@
                     <div class="credential-number">0</div>
                     <div class="credential-label">Formal complaints upheld</div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE -->
+    <section class="hosts" id="live">
+        <div class="about-grid reveal">
+            <h2 class="section-heading">Live</h2>
+            <p class="about-text">
+                For those who prefer a more direct consultation, we occasionally take the Clinic on the road. Catch us live at the following engagements.
+            </p>
+            <div class="live-dates">
+                <a href="https://hdfst.uk/e150327" target="_blank" rel="noopener" class="live-show">
+                    <div class="live-show-details">
+                        <span class="live-show-date">22 Apr 2026</span>
+                        <span class="live-show-name">The Joke Clinic Live @ The Gaffe</span>
+                        <span class="live-show-venue">Bristol</span>
+                    </div>
+                    <span class="live-show-cta">Tickets
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                    </span>
+                </a>
+                <a href="https://www.exetercornexchange.co.uk/whats-on/exeter-comedy-festival-the-joke-clinic-live/" target="_blank" rel="noopener" class="live-show">
+                    <div class="live-show-details">
+                        <span class="live-show-date">06 Jun 2026</span>
+                        <span class="live-show-name">Exeter Comedy Festival</span>
+                        <span class="live-show-venue">Exeter</span>
+                    </div>
+                    <span class="live-show-cta">Tickets
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                    </span>
+                </a>
             </div>
         </div>
     </section>
